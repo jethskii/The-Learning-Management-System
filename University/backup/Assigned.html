@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="image/image logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="enrollment.html">ENROLLMENT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html"><button>SIGN OUT</button></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <style>
+          body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sub-header {
+    background: url(image/Global.jpg) no-repeat;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+nav .fa {
+    display: none;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.course {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.course p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-card {
+    background: url(image/OIP.jpg) no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.course-card h2 {
+    margin-top: 0;
+}
+
+.course-card p {
+    margin: 10px 0;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .icons i {
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        position: fixed;
+        background: #fff;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        transition: 0.3s;
+    }
+
+    .nav-links ul li {
+        margin: 50px 0;
+    }
+
+    nav .fa {
+        display: block;
+        color: #000;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .course-cards {
+        flex-direction: column;
+    }
+}
+
+        </style>
+        <h1>Our Courses</h1>
+    </section>
+
+    <section class="course">
+        <h1>Classes</h1>
+        <p>Embark on a journey of knowledge and discovery with our diverse range of courses tailored to suit your learning needs. Whether you're eager to master new skills, expand your horizons, or deepen your expertise, our curated selection of courses promises to inspire and empower you. From foundational subjects to advanced specialties, we offer a dynamic array of learning opportunities designed to fuel your passion and drive your success. Unleash your potential and chart your path to excellence with our comprehensive catalog of courses. Explore, learn, and thrive with us.</p>
+        
+        <div class="course-cards">
+            <div class="course-card">
+                <h2><a href="ips.html">IPS</a></h2>
+                <p>MW 3:30-5:00</p>
+                <p>BSIS-2A</p>
+                <p>Instructor: Antonio Regoris</p>
+            </div>
+            <div class="course-card">
+                <h2><a href="is224.html">IS224</a></h2>
+                <p>System Analysis</p>
+                <p>2nd Semester; AY 2023 - 2024</p>
+                <p>Instructor: Bry May</p>
+            </div>
+            <div class="course-card">
+                <h2><a href="IPT.html">IPT</a></h2>
+                <p>TTH 3:00-5:30</p>
+                <p>IPT222</p>
+                <p>Instructor: Mr. D. Rambla</p>
+            </div>
+            <div class="course-card">
+                <h2><a href="iselective1.html">IS ELECTIVE1</a></h2>
+                <p>BSIS-2A</p>
+                <p>Instructor: Carl Wencie Caraballo</p>
+            </div>
+            <div class="course-card">
+                <h2><a href="FIldis.html">FILDIS</a></h2>
+                <p>GE107</p>
+                <p>2A</p>
+                <p>Instructor: Dr. Gregoria Ople</p>
+            </div>
+            <div class="course-card">
+                <h2><a href="ge108.html">GE-108</a></h2>
+                <p>MW:11-12:30</p>
+                <p>BSIS-2A</p>
+                <p>Instructor: Antonio Regoris</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Welcome to the University, where academic excellence meets boundless opportunities. Our faculty are dedicated mentors fostering a dynamic learning environment. With state-of-the-art facilities and diverse programs, students explore their interests and prepare for success. Join our vibrant community and unleash your potential at University.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made <i class="fa fa-heart-o"></i> by Jethro Mandalones</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

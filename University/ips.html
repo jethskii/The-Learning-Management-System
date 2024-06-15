@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Stream</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container Styles */
+        .classroom {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #4285F4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Upcoming Styles */
+        .upcoming {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Textarea Styles */
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* File and Link Input Styles */
+        input[type="file"],
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Button Styles */
+        button {
+            width: 80%;
+            padding: 10px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        /* Hover Styles */
+        button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="classroom">
+        <div class="header">
+            <h1>IPS - MW 3:30-5:00</h1>
+            <h2>BSIS-2A</h2>
+        </div>
+        <div class="upcoming">
+            <p>Woohoo, no work due soon!</p>
+        </div>
+        <form action="post_message.php" method="POST" enctype="multipart/form-data">
+            <textarea name="message" placeholder="Announce something to your class" required></textarea>
+            <input type="file" name="file">
+            <input type="text" name="link" placeholder="Link URL">
+            <button type="submit">Post</button>
+        </form>
+    </div>
+</body>
+</html>
